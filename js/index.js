@@ -24,7 +24,7 @@ $(document).ready(function() {
 			$("body").css({"background":"#F5F5F5"});
 			$("h1, h2, h3, h4, p, a").css({"color":"black"});
 			$('.img1 img').attr("src","/portfolio/images/img-1-light.png");
-			$('#header img').attr("src","/portfolio/images/hbblack.png");
+			$('#header img').attr("src","/portfolio/images/hb.png");
 			$("#header , #footer").css({"background": "rgba(0,0,0,0.33)"});
 		}
 	});
