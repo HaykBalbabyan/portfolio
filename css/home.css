@@ -1,0 +1,560 @@
+/*web*/	
+	#voma{background-image: url(/portfolio/images/voma-1.png);}
+	#saint{background-image: url(/portfolio/images/saint1.png);}
+	#sb{background-image: url(/portfolio/images/sb1.png);}
+/*graphic*/
+	.sp{background-image: url(/portfolio/images/port1.png);}
+	.si{background-image: url(/portfolio/images/port2.png);}
+	.ai{background-image: url(/portfolio/images/port3.png);}
+	.sd{background-image: url(/portfolio/images/port4.png);}
+	.ms{background-image: url(/portfolio/images/port5.png);}
+	.hm{background-image: url(/portfolio/images/port6.png);}
+body{
+	overflow-x: hidden;
+	font-family: RobotoThin;
+	background: #F5F5F5;
+}
+@font-face {
+	font-family: RobotoThin;
+	src: url(/portfolio/font/Roboto-Thin.ttf);
+}
+@font-face {
+	font-family: RobotoRegular;
+	src: url(/portfolio/font/Roboto-Regular.ttf);
+}
+li,
+ul,
+input,
+button,
+a,
+div {
+	outline: none;
+	text-decoration: none;
+	font-family: RobotoThin;
+	color:#000000;
+}
+@media only screen and (orientation: landscape){
+	body::-webkit-scrollbar {
+ 	 width: 0.2vw;
+	}
+	body::-webkit-scrollbar-track {
+		background: #f1f1f1; 
+	}
+	body::-webkit-scrollbar-thumb {
+		background: #888; 
+	}
+	body::-webkit-scrollbar-thumb:hover {
+		background: #555; 
+	}
+	div::-webkit-scrollbar {
+ 	 width: 0.7vw;
+	}
+	div::-webkit-scrollbar-track {
+		background: rgba(0,0,0,0.33); 
+	}
+	div::-webkit-scrollbar-thumb {
+		background: rgba(0,0,0,0.6); 
+	}
+	div::-webkit-scrollbar-thumb:hover {
+		background: rgba(0,0,0,0.7); 
+	}
+	/*header*/
+	#header {
+		width: 101.8vw;
+		height: 4vw;
+		background: rgba(0,0,0,0.33);
+		position: fixed;
+		left:0px;
+		top:0;
+		z-index: 999;
+	}
+	#header .logo{
+		width: 4%;
+	}
+	#theme {
+		width: 3.5vw;
+		height: 3.5vw;
+		vertical-align: top;
+		position: relative;
+		top:0.27vw;
+		left:91.2vw;
+		border-radius: 0.5vw;
+		cursor: pointer;
+		position: relative;
+		display: inline-block;
+	}
+	#theme i{
+		font-size: 2vw;
+		position: relative;
+		top:0.8vw;
+		color: #F5F5F5;
+	}
+	#theme input { 
+	opacity: 0;
+		width: 0;
+		height: 0;
+	}
+	.theme {
+		position: absolute;
+		cursor: pointer;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: rgba(0,0,0,0.33);
+		border: solid 0.1vw rgba(0,0,0,0.33);
+	}
+	#theme input:checked + .theme {
+		background-color: rgba(172,172,172,0.33);
+		border: solid 0.1vw rgba(172,172,172,0.33);
+	}
+	.theme.round {border-radius: 0.5vw;}
+	/*body*/
+	.img1{
+		position: relative;
+		right: 8px;
+		bottom: 100px;
+
+	}
+	.img1 img{
+		width: 101.8vw;
+	}
+
+	.img1 .text-block {
+		position: absolute;
+		bottom: 4px;
+		right: -3.5vw;
+		color: black;
+		width:105vw;
+		height:99.5%;
+	}
+	.img1 h1{
+		position: relative;
+		top:20vw;
+		font-size: 5vw;
+		width: 45vw;
+	}
+	.img1 h4{
+		position: relative;
+		top:17vw;
+		font-size: 2.2vw;
+		width: 25vw;
+	}
+	.img1 h3{
+		position: relative;
+		top:28vw;
+		font-size: 1.9vw;
+		width: 10vw;
+	}
+	.img1 h2{
+		position: relative;
+		top:27vw;
+		font-size: 2.5vw;
+		width: 5vw;
+	}
+	#me {
+		width: 60vw;
+		font-size: 1.8vw;
+		text-align: center;
+
+	}
+	#wh1{font-size: 3.5vw;width: 60vw;}
+	#works{
+		width: 94vw;
+		border-top: 0.1vw solid #919191;
+		border-bottom: 0.1vw solid #919191;
+		height: 19.5vw;
+		position: relative;
+		right: 8px;
+		padding: 3vw;
+		
+	}
+	#works div{
+		width: 27.2vw;
+		height: 15.3vw;
+		background-size: 27.2vw;
+		border-radius: 0.7vw;
+		margin: 1.7vw;
+		float: left;
+		transition: 0.3s;
+		cursor: pointer;
+		border: 0.1vw solid #919191;
+	}
+	#designs{
+		width: 94vw;
+		border-top: 0.1vw solid #919191;
+		border-bottom: 0.1vw solid #919191;
+		height: 39vw;
+		position: relative;
+		right: 8px;
+		padding: 3vw;
+		
+	}
+	#designs div{
+		width: 27.2vw;
+		height: 15.3vw;
+		background-size: 27.2vw;
+		border-radius: 0.7vw;
+		margin: 1.7vw;
+		float: left;
+		transition: 0.3s;
+		cursor: pointer;
+		border: 0.1vw solid #919191;
+	}
+	#intro-des{
+		position: fixed;
+		left:0;
+		top:0;
+		z-index: 99999;
+		width: 100vw;
+		height: 100%;
+		background: rgba(0,0,0,0.7);
+	}
+	#graphic{
+		width:80vw;
+		height:45vw;
+		background-size: 80vw;
+		position: fixed;
+		left:10vw;
+		top:1.55vw;
+		z-index: 9999999;
+		border-radius: 0.7vw;
+	}
+	
+	.temp{background:gray;}
+	#intro-blur{
+		position: fixed;
+		left:0;
+		top:0;
+		z-index: 99999;
+		width: 100vw;
+		height: 100vw;
+		background: rgba(0,0,0,0.7);
+	}
+	#intall{
+		position: relative;
+		left:5vw;
+		width: 90vw;
+		z-index: 999999;
+		height: 100%;
+		background: rgba(0,0,0,0.3);
+		overflow-y: scroll;
+	}
+	.intro{
+		color: none;
+		width: 80vw;
+		height: 45vw;
+		background: none;
+		position: relative;
+		left:5vw;
+		top:2vw;
+		overflow-y: auto; 
+	}
+	.intro img{
+		width: 79.33vw;
+	}
+	#works div:hover, #designs div:hover{
+		-webkit-box-shadow: 0px 1vw 1.1vw 0px rgba(0, 0, 0, 0.2);
+		-moz-box-shadow: 0px 1vw 1.1vw 0px rgba(0, 0, 0, 0.2);
+		box-shadow: 0px 1vw 1.1vw 0px rgba(0, 0, 0, 0.2);
+		transform: scale(1.04);
+	}
+	/*footer*/
+	#footer{
+		width: 100vw;
+		height: 13vw;
+		position: relative;
+		right: 8px;
+		top:8px;
+		background: rgba(0,0,0,0.33);
+	}
+	#footer h1{
+		position: relative;
+		top:2vw;
+		font-size: 2vw;
+		width: 25vw;
+		font-family: RobotoRegular;
+	}
+	#contact h2{
+		position: relative;
+		top: 0.7vw;
+		font-size: 1.8vw;
+		width: 8vw;
+		right: 2.5vw;
+		font-family: RobotoRegular;
+	}
+	#contact a{
+		font-size: 2.3vw;
+		position: relative;
+		bottom: 3.2vw;
+		left: 3.2vw;
+	}
+	#lang{
+		position: relative;
+		bottom: 3vw;
+		font-family: RobotoRegular;
+		font-size: 1.5vw;
+	}
+	#lang a{
+		font-family: RobotoRegular;
+	}
+	#myad{
+		position: relative;
+		top: 14.5vw;
+		font-size: 1.2vw;
+		font-family: RobotoRegular;
+	}
+	.fa-heart i{transition: 0.3s;}
+	.fa-heart i:hover{color: #FF0644;}
+}
+@media only screen and (orientation: portrait){
+	::-webkit-scrollbar {
+ 	 width: 0vw;
+	}
+	/*header*/
+	#header {
+		width: 102vw;
+		height: 4vw;
+		background: rgba(0,0,0,0.33);
+		position: fixed;
+		left:0px;
+		top:0;
+		z-index: 999;
+	}
+	#header .logo{
+		width: 4%;
+	}
+	#theme {
+		width: 3.5vw;
+		height: 3.5vw;
+		vertical-align: top;
+		position: relative;
+		top:0.27vw;
+		left:93.2vw;
+		border-radius: 0.5vw;
+		cursor: pointer;
+		position: relative;
+		display: inline-block;
+	}
+	#theme i{
+		font-size: 2vw;
+		position: relative;
+		top:0.8vw;
+		color: #F5F5F5;
+	}
+	#theme input { 
+	opacity: 0;
+		width: 0;
+		height: 0;
+	}
+	.theme {
+		position: absolute;
+		cursor: pointer;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: rgba(0,0,0,0.33);
+		border: solid 0.1vw rgba(0,0,0,0.33);
+	}
+	#theme input:checked + .theme {
+		background-color: rgba(172,172,172,0.33);
+		border: solid 0.1vw rgba(172,172,172,0.33);
+	}
+	.theme.round {border-radius: 0.5vw;}
+	/*body*/
+	.img1{
+		position: relative;
+		right: 8px;
+		bottom: 100px;
+
+	}
+	.img1 img{
+		width: 102vw;
+	}
+
+	.img1 .text-block {
+		position: absolute;
+		bottom: 4px;
+		right: -3.5vw;
+		color: black;
+		width:105vw;
+		height:99.5%;
+	}
+	.img1 h1{
+		position: relative;
+		top:13vw;
+		font-size: 7vw;
+		width: 60vw;
+	}
+	.img1 h4{
+		position: relative;
+		top:8vw;
+		font-size: 4.5vw;
+		width: 60vw;
+	}
+	.img1 h3{
+		position: relative;
+		top:16vw;
+		font-size: 4vw;
+		width: 20vw;
+	}
+	.img1 h2{
+		position: relative;
+		top:13vw;
+		font-size: 4vw;
+		width: 5vw;
+	}
+	#me {
+		width: 80vw;
+		font-size: 2.5vw;
+		text-align: center;
+
+	}
+	#wh1{font-size: 6vw;width: 90vw;}
+	#works{
+		width: 94vw;
+		border-top: 0.1vw solid #919191;
+		border-bottom: 0.1vw solid #919191;
+		height: 160vw;
+		position: relative;
+		right: 8px;
+		padding: 3vw;
+		
+	}
+	#works div{
+		width: 91vw;
+		height: 50.63vw;
+		background-size: 91vw;
+		border-radius: 0.7vw;
+		margin: 1.7vw;
+		transition: 0.3s;
+		cursor: pointer;
+		border: 0.1vw solid #919191;
+	}
+	#designs{
+		width: 94vw;
+		border-top: 0.1vw solid #919191;
+		border-bottom: 0.1vw solid #919191;
+		height: 325vw;
+		position: relative;
+		right: 8px;
+		padding: 3vw;
+		
+	}
+	#designs div{
+		width: 91vw;
+		height: 50.63vw;
+		background-size: 91vw;
+		border-radius: 0.7vw;
+		margin: 1.7vw;
+		float: left;
+		transition: 0.3s;
+		cursor: pointer;
+		border: 0.1vw solid #919191;
+	}
+	#intro-des{
+		position: fixed;
+		left:0;
+		top:0;
+		z-index: 99999;
+		width: 102vw;
+		height: 100%;
+		background: rgba(0,0,0,0.7);
+	}
+	#graphic{
+		width:80vw;
+		height:45vw;
+		background-size: 80vw;
+		position: fixed;
+		left:10vw;
+		top:1.55vw;
+		z-index: 9999999;
+		border-radius: 0.7vw;
+	}
+	
+	.temp{background:gray;}
+	#intro-blur{
+		position: fixed;
+		left:0;
+		top:0;
+		z-index: 99999;
+		width: 105vw;
+		height: 100%;
+		background: rgba(0,0,0,0.7);
+	}
+	#intall{
+		position: relative;
+		left:5vw;
+		width: 90vw;
+		z-index: 999999;
+		height: 170%;
+		background: rgba(0,0,0,0.3);
+		overflow-y: scroll;
+	}
+	.intro{
+		color: none;
+		width: 80vw;
+		margin: 5vw;
+		background: none;
+		position: relative;
+		top:2vw;
+		overflow-y: auto; 
+	}
+	.intro img{
+		width: 79.33vw;
+	}
+	#works div:hover, #designs div:hover{
+		-webkit-box-shadow: 0px 1vw 1.1vw 0px rgba(0, 0, 0, 0.2);
+		-moz-box-shadow: 0px 1vw 1.1vw 0px rgba(0, 0, 0, 0.2);
+		box-shadow: 0px 1vw 1.1vw 0px rgba(0, 0, 0, 0.2);
+		transform: scale(1.04);
+	}
+	/*footer*/
+	#footer{
+		width: 102vw;
+		height: 40vw;
+		position: relative;
+		right: 8px;
+		top:8px;
+		background: rgba(0,0,0,0.33);
+	}
+	#footer h1{
+		position: relative;
+		top:6vw;
+		font-size: 5vw;
+		width: 80vw;
+		font-family: RobotoRegular;
+	}
+	#contact h2{
+		position: relative;
+		top: 1.3vw;
+		font-size: 5vw;
+		width: 8vw;
+		right: 12vw;
+		font-family: RobotoRegular;
+	}
+	#contact a{
+		font-size: 5vw;
+		position: relative;
+		bottom: 8.5vw;
+		left: 8.2vw;
+	}
+	#lang{
+		position: relative;
+		bottom: 8vw;
+		font-family: RobotoRegular;
+		font-size: 4vw;
+	}
+	#lang a{
+		font-family: RobotoRegular;
+	}
+	#myad{
+		position: relative;
+		top: 40vw;
+		font-size: 1.5vw;
+		font-family: RobotoRegular;
+	}
+	.fa-heart i{transition: 0.3s;}
+	.fa-heart i:hover{color: #FF0644;}
+}
