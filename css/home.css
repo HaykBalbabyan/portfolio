@@ -10,7 +10,7 @@
 	.ms{background-image: url(/portfolio/images/port5.png);}
 	.hm{background-image: url(/portfolio/images/port6.png);}
 body{
-	overflow-x: hidden;
+	overflow-x: none;
 	font-family: RobotoThin;
 	background: #F5F5F5;
 }
