@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Portfolio | Hayk Balbabyan</title>
+	<meta charset="UTF-8">
+	<link rel="icon" type="image/png" href="/portfolio/images/HB.png">
+	<script type='text/javascript' src="/portfolio/js/icons.js"></script>
+	<script type='text/javascript' src="/portfolio/js/jquery.js"></script>
+	<link href="/portfolio/css/home.css" type="text/css" rel="stylesheet">
+	<script type='text/javascript' src="/portfolio/js/index.js"></script>
+	<script type='text/javascript' src="/portfolio/js/print.js"></script>
+	
+</head>
+<body id="allbody">
+	<div id="header">
+		<a href="/portfolio"><img src="/portfolio/images/hb.png" class="logo"></a>
+		<label id="theme">
+ 			<input type="checkbox">
+  			<span class="theme round"></span>
+  			<i class="fal fa-sun"></i>
+		</label>
+	</div>
+	<div id="body">
+
+		<center>
+			
+			<object id="cv" data='/portfolio/CV/HaykBalbabyan_CV_RU.pdf#toolbar=0' 
+        	type='application/pdf'></object><br>
+        </center>
+        <center id="cvlinks">
+        	<button id='download'>
+        		<a href="/portfolio/CV/HaykBalbabyan_CV_RU.pdf" download>
+        			<b>Скачать </b><i class="far fa-file-download"></i>
+				</a>
+			</button>
+			<button id="print" type="button" onclick="printJS({printable:'/portfolio/CV/HaykBalbabyan_CV_RU.pdf', type:'pdf', showModal:true})"><d>Напечать</d> <i class="far fa-print"></i>
+			</button>
+		</center>
+
+   		
+	<center><p id="myad">Created with <b class="love" title="Love"> LOVE</b> by Beefl</p></center>
+	<div id="footer">
+		<center>
+			<h1><i class="far fa-copyright"></i> Hayk Balbabyan 2021</h1>
+			<div id="contact">
+				<h2>Contact:</h2>
+				<a href="https://instagram.com/hayko_____7" target="_blank"><i class="fab fa-instagram"></i></a>
+				<a href="https://facebook.com/hayk.balbabyan.33" target="_blank"><i class="fab fa-facebook-square"></i></a>
+			</div>
+			<div id="lang">
+			<a href="/portfolio/CV">English (USA)</a> |
+			<a href="/portfolio/CV/ru">Russian</a>
+			</div>
+			
+		</center>
+	</div>
+</body>
+</html>

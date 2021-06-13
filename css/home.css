@@ -10,7 +10,7 @@
 	.ms{background-image: url(/portfolio/images/port5.png);}
 	.hm{background-image: url(/portfolio/images/port6.png);}
 body{
-	overflow-x: none;
+	overflow-x: hidden;
 	font-family: RobotoThin;
 	background: #F5F5F5;
 }
@@ -36,6 +36,7 @@ div {
 @media only screen and (orientation: landscape){
 	body::-webkit-scrollbar {
  	 width: 0.2vw;
+ 	 
 	}
 	body::-webkit-scrollbar-track {
 		background: #f1f1f1; 
@@ -160,7 +161,7 @@ div {
 	}
 	#wh1{font-size: 3.5vw;width: 60vw;}
 	#works{
-		width: 95vw;
+		width: 93vw;
 		border-top: 0.1vw solid #919191;
 		border-bottom: 0.1vw solid #919191;
 		height: 19.5vw;
@@ -181,7 +182,7 @@ div {
 		border: 0.1vw solid #919191;
 	}
 	#designs{
-		width: 95vw;
+		width: 93vw;
 		border-top: 0.1vw solid #919191;
 		border-bottom: 0.1vw solid #919191;
 		height: 39vw;
@@ -228,7 +229,7 @@ div {
 		top:0;
 		z-index: 99999;
 		width: 100vw;
-		height: 100vw;
+		height: 100%;
 		background: rgba(0,0,0,0.7);
 	}
 	#intall{
@@ -258,6 +259,66 @@ div {
 		-moz-box-shadow: 0px 1vw 1.1vw 0px rgba(0, 0, 0, 0.2);
 		box-shadow: 0px 1vw 1.1vw 0px rgba(0, 0, 0, 0.2);
 		transform: scale(1.04);
+	}
+	/*download*/
+	#cv{
+		width: 58vw;
+		height: 81.8vw;
+		background: none;
+		position: relative;
+		top:4.4vw;
+		border-radius: 0.5vw;
+	}
+	#download{
+		position: relative;
+		top:4.3vw;
+		width: 10vw;
+		height: 3vw;
+		font-size: 1.4vw;
+		font-family: RobotoRegular;
+		background: #00C400;
+		border-radius: 0.5vw;
+		border: solid 0px;
+		transition: 0.3s;
+		cursor: pointer;
+	}
+	#download:hover{
+		background: #00B200;
+	}
+	#download{
+		position: relative;
+		width: 10vw;
+		height: 3vw;
+		font-size: 1.4vw;
+		font-family: RobotoRegular;
+		background: rgba(0,196,0,0.5);
+		border-radius: 0.5vw;
+		border: solid 0px;
+		transition: 0.3s;
+		cursor: pointer;
+	}
+	#download:hover{
+		background: rgba(0,178,0,0.6);
+	}
+	#print{
+		top:4.3vw;
+		position: relative;
+		width: 10vw;
+		height: 3vw;
+		font-size: 1.4vw;
+		font-family: RobotoRegular;
+		background: rgba(0,98,205,0.5);
+		border-radius: 0.5vw;
+		border: solid 0px;
+		transition: 0.3s;
+		cursor: pointer;
+	}
+	#print:hover{
+		background: rgba(0,92,190,0.6);
+	}
+	#cvlinks{
+		top:4.3vw;
+		display: block;
 	}
 	/*footer*/
 	#footer{
@@ -413,7 +474,7 @@ div {
 	}
 	#wh1{font-size: 6vw;width: 90vw;}
 	#works{
-		width: 94vw;
+		width: 95vw;
 		border-top: 0.1vw solid #919191;
 		border-bottom: 0.1vw solid #919191;
 		height: 160vw;
@@ -433,7 +494,7 @@ div {
 		border: 0.1vw solid #919191;
 	}
 	#designs{
-		width: 94vw;
+		width: 95vw;
 		border-top: 0.1vw solid #919191;
 		border-bottom: 0.1vw solid #919191;
 		height: 325vw;
@@ -509,6 +570,66 @@ div {
 		-moz-box-shadow: 0px 1vw 1.1vw 0px rgba(0, 0, 0, 0.2);
 		box-shadow: 0px 1vw 1.1vw 0px rgba(0, 0, 0, 0.2);
 		transform: scale(1.04);
+	}
+	/*download*/
+	#cv{
+		width: 95vw;
+		height: 128vw;
+		background: none;
+		position: relative;
+		top:8.4vw;
+		border-radius: 0.5vw;
+	}
+	#download{
+		position: relative;
+		top:8.3vw;
+		width: 10vw;
+		height: 3vw;
+		font-size: 1.4vw;
+		font-family: RobotoRegular;
+		background: #00C400;
+		border-radius: 0.5vw;
+		border: solid 0px;
+		transition: 0.3s;
+		cursor: pointer;
+	}
+	#download:hover{
+		background: #00B200;
+	}
+	#download{
+		position: relative;
+		width: 25vw;
+		height: 8vw;
+		font-size: 3vw;
+		font-family: RobotoRegular;
+		background: rgba(0,196,0,0.5);
+		border-radius: 0.5vw;
+		border: solid 0px;
+		transition: 0.3s;
+		cursor: pointer;
+	}
+	#download:hover{
+		background: rgba(0,178,0,0.6);
+	}
+	#print{
+		top:8.3vw;
+		position: relative;
+		width: 25vw;
+		height: 8vw;
+		font-size: 3vw;
+		font-family: RobotoRegular;
+		background: rgba(0,98,205,0.5);
+		border-radius: 0.5vw;
+		border: solid 0px;
+		transition: 0.3s;
+		cursor: pointer;
+	}
+	#print:hover{
+		background: rgba(0,92,190,0.6);
+	}
+	#cvlinks{
+		top:8.3vw;
+		display: block;
 	}
 	/*footer*/
 	#footer{
