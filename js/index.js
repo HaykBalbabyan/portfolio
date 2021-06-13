@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function() {	
 	$('#intro-blur').hide(0);
 	$('#intro-des').hide(0);
 	$("#screg").click(function(){
@@ -22,6 +22,7 @@ $(document).ready(function() {
 			$('.img1 img').attr("src","/portfolio/images/img-1-dark.png");
 			$('#header img').attr("src","/portfolio/images/hbwhite.png");
 			$("#header , #footer").css({"background": "rgba(172,172,172,0.33)"});
+			$("#print d, #print i").css({"color":"#F5F5F5"});
 		} else {
 			$('#theme i').addClass("fa-sun");
 			$("#theme i").removeClass("fa-moon");
@@ -30,6 +31,7 @@ $(document).ready(function() {
 			$('.img1 img').attr("src","/portfolio/images/img-1-light.png");
 			$('#header img').attr("src","/portfolio/images/hb.png");
 			$("#header , #footer").css({"background": "rgba(0,0,0,0.33)"});
+			$("#print d, #print i").css({"color":"black"});
 		}
 	});
 	$("#intro-des").click(function(){
@@ -72,7 +74,7 @@ $(document).ready(function() {
 	$("#voma").click(function(){
 		$('#intro-blur').fadeIn(200);
 		$('#i1 img').attr("src","/portfolio/images/voma.png");
-		$('#i2 img , #i3 img , #i4 img').attr("src","");
+		$('#i2 img ,#i3 img ,#i4 img').attr("src","");
 	});
 	$("#saint").click(function(){
 		$('#intro-blur').fadeIn(200);
